@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コメントページ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>~Comment page~</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post" class="comment-form">
+            <div class="form-group">
+                <label for="name">氏名 (ニックネーム可):</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="comment">ご感想:</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="rating">評価:</label>
+                <select id="rating" name="rating" required>
+                    <option value="">--選択してください--</option>
+                    <option value="5">大変満足 (★★★★★)</option>
+                    <option value="4">満足 (★★★★)</option>
+                    <option value="3">普通 (★★★)</option>
+                    <option value="2">少し不満 (★★)</option>
+                    <option value="1">不満 (★)</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="submit">送信</button>
+                <button type="reset">リセット</button>
+            </div>
+        </form>
+
+        <nav class="links">
+            <p><a href="mypage.html">自己紹介ページへ</a></p>
+            <p><a href="index.html">トップページへ戻る</a></p>
+        </nav>
+    </main>
+</body>
+</html>
